@@ -271,7 +271,7 @@ class MirrorLeechListener:
             slmsg += f"📐 Size: {size}\n"
             slmsg += f"👥 Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         else:
-            slmsg = f"Name: <{NAME_FONT}>{escape(name)}</{NAME_FONT}>\n\n"
+            slmsg = f"🗂️ Name: <{NAME_FONT}>{escape(name)}</{NAME_FONT}>\n\n"
             slmsg += f"Size: {size}\n"
             slmsg += f"Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         if 'link_logs' in user_data:
