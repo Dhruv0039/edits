@@ -615,6 +615,9 @@ class MirrorLeechListener:
             except Exception as e:
                     LOGGER.warning(e)
             pass
+            reply_to = self.message.reply_to_message
+            if reply_to is not None and config_dict['AUTO_DELETE_UPLOAD_MESSAGE_DURATION'] == -1:
+                reply_to.delete()
 
         clean_download(self.dir)
         with download_dict_lock:
